@@ -34,12 +34,22 @@
         background-color: transparent;
         text-decoration: none;
         }
- body {
-  background-image: url("site bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
+ html {
+  background: url("site bg.png") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
  }
+ @media only screen and (orientation:portrait)
+{
+    #wrapper { display:none; }
+    #warning-message { display:block; color: white;}
+    
+    html
+    {
+        background:url("https://s3files.core77.com/blog/images/2013/11/ESB-HalloweenLightShow-1.jpg") no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+    }
 </style>
 <title>Josie May</title>
 </head>
